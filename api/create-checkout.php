@@ -39,7 +39,7 @@ try {
             'quantity' => 1,
         ]],
         'mode' => 'payment',
-        'success_url' => 'https://www.formcard.com/success.html?session_id={CHECKOUT_SESSION_ID}',
+        'success_url' => 'https://www.formcard.com/success?session_id={CHECKOUT_SESSION_ID}',
         'cancel_url' => 'https://www.formcard.com/shop-test-stripe',
         'metadata' => [
             'order_details' => $input['order_details'],
