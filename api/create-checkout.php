@@ -32,8 +32,8 @@ try {
                 'currency' => 'gbp',
                 'product_data' => [
                     'name' => 'FORMcard Custom Colour Pack',
-                    'description' => $input['pack_count'] . ' packs (' . ($input['pack_count'] * 3) . ' cards)',
-                ],
+    'description' => $input['order_details'], // This shows the actual colors!
+],
                 'unit_amount' => (int)$input['amount'], // Amount in pence - cast to integer
             ],
             'quantity' => 1,
