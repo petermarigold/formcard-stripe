@@ -6,7 +6,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 \Stripe\Stripe::setApiKey('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');
 
 // Set CORS headers to allow your website to call this
-header('Access-Control-Allow-Origin: https://www.formcard.com');
+header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json');
