@@ -1,5 +1,5 @@
 <?php
-// version 2
+// version 3
 // Load Stripe library
 require_once __DIR__ . '/../vendor/autoload.php';
 
