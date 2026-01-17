@@ -3,7 +3,7 @@
 // Load Stripe library
 require_once __DIR__ . '/../vendor/autoload.php';
 
-\Stripe\Stripe::setApiKey('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');
+\Stripe\Stripe::setApiKey(getenv('STRIPE_SECRET_KEY'));
 
 // Set CORS headers - now handled by vercel.json but keeping for safety
 header('Access-Control-Allow-Origin: *');
