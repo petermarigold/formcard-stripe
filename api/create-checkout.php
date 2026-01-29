@@ -27,6 +27,10 @@ try {
     
     $session = \Stripe\Checkout\Session::create([
         'payment_method_types' => ['card'],
+         'billing_address_collection' => 'required',
+'shipping_address_collection' => [
+    'allowed_countries' => ['GB', 'US', 'CA', 'AU', 'NZ', 'IE', 'FR', 'DE', 'ES', 'IT', 'NL', 'BE', 'SE', 'NO', 'DK', 'FI', 'AT', 'CH', 'PT', 'PL', 'CZ', 'GR', 'JP', 'SG', 'HK', 'MX', 'BR'],
+],                                       
         'line_items' => [[
             'price_data' => [
                 'currency' => 'gbp',
