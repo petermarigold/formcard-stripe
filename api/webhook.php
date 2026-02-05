@@ -1,4 +1,5 @@
 <?php
+file_put_contents('/tmp/webhook-test.log', date('Y-m-d H:i:s') . " - Webhook called!\n", FILE_APPEND);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
